@@ -1,0 +1,42 @@
+.nav-link,.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar .nav-item .nav-link:hover{
+    color: black !important;
+    font-weight: bold;
+    transition: all.5s ease-in-out;
+}
+.navbar-collapse{
+    text-align: right;
+}
+h2 .fa{
+    color: gold;
+    font-size: 30px;
+}
+@media screen and (min-width: 480px){
+    #roshetabtn{
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: right;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 6px solid blueviolet;
+  font-size: 18px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="style.css">
+<title>project</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <a class="navbar-brand ml-4" href="#"><img src="imgs/logo.jpg" width="80px" height="60px"> DrugGo </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa fa-home"></i> الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fa fa-edit"></i> معلومات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-download"></i> تحميل </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-pencil-alt"></i> متابعة </a>
+            </li>
+          </ul>
+        </div>
+    </nav><br><br>
+    <div class="container mt-3">
+			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+						<br>
+						<h2 class="text-center"><i class="fa fa-arrow-circle-down"></i> من فضلك قم بإختيار الروشته   </h2>
+						<div class="text-right">	
+              <label> الروشته </label>
+							<select id="Drug" style="direction: rtl" class="form-control" name="country" required>
+								<option class="text-right"></option>
+							</select>
+
+              <br>
+              <label>Select option</label>
+							<select id="state" style="direction: rtl" name="state" class="form-control">
+								<option></option>
+							</select>
+              <br>
+							<label>: Drugs is </label>
+							<table class="table table-info">
+                <th>Drugs Description </th>
+                <th>Name</th>
+                <tbody>
+                  <tr>
+                    <td id="drugs_list"></td>
+                  </tr>
+                </tbody>
+              </table>
+							<br>
+
+						</div><br>
+					
+					
+				</div>	
+			</div>		
+		</div>
+    <div class="jumbotron text-right" id="about" style="padding-bottom: 1rem; ">
+        <h2 class="mb-2"><i class="fa fa-capsules"></i> عن التطبيق </h2><br>
+        <p class="lead mt-2 font-weight-bold">فكرة التطبيق هو مساعدة الأطباء والصيادلة ومساعدي الصيادلة الوصول لأفضل تجميعات كتبت عن الأدوية وبنعدلها بإستمرار وبنضيف المواضيع المقترحة من المستخدمين ، الهدف غير ربحي ولا تظهر أي إعلانات علي التطبيق مطلقا 
+             ما نقدمه هو أفضل ما كتب علي مواقع التواصل الإجتماعي مجمعة في تطبيق واحد يساعد القاريء علي التركيز في القراءة بدون أي تشتيت أو بحث يستغرق ساعات ، لم يتم استخدام أي محتوي محمي بحقوق نشر ولا ننسب أي محتوي لنفسنا ،لأن الهدف ليس هو تأليف المحتوي ولكن تسهيل الوصول والمساعدة في نشر العلم ونشر ماهو نافع بدون تحقيق أرباح وبدون إعلانات مزعجة، التحديث مستمر والتقييم مهم جدا للإستمرار . 
+                   إزاي تستفيد من التطبيق ؟ وانتا في الصيدلية إفتح وإقرا وابعتلنا علي صفحة الفيسبوك قريت قد إيه وإيه عجبك وإيه معجبكش وأي أسئلة هيساعدك فيها دكاترة وصيادلة عندهم خبرة سنين        
+        </p>
+        <div class="text-right"> 
+          <h2 class="text-lead font-weight-bold"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          <i class="fa fa-star"></i><i class="fa fa-star"></i>   أرسلني الي رابط التطبيق لتحميل التطبيق و لإعطاء تقييم 
+          </h2><br>
+          <a class="btn btn-info p-2" style="font-size:22px" target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.otc&fbclid=IwAR0TGM3wDQkfr88WrtmaraV5y1592KArtiQM8ohskBISTFZI16dCduHLHKE">
+          <i class="fa fa-mouse-pointer"></i> إضغط هنا لتحميل التطبيق أو للتقييم 
+          </a>
+      </div>   
+    </div>
+    
+   
+    <div class="mt-2 footer text-center bg-info p-2 text-white">
+      <h5>Copy Right &copy; Ahmed Elmahy </h5>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+</html>
